@@ -2,6 +2,7 @@
 process_names=("cloudphotosd" "Photos" "CCXProcess" "photoanalysisd" "photolibraryd")
 # TODO: Wondershare Helper Compact
 
+date +'%m/%d/%Y %H:%M'
 for process_name in ${process_names[@]}; do
     # echo $process_name
     pids=$(pgrep $process_name)
